@@ -34,3 +34,6 @@ class TestCompany():
 
     def test_update_company(self):
         pass
+
+    def test_search_company(self):
+        pass
