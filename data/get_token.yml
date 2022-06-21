@@ -1,0 +1,9 @@
+get_token:
+  "method": "post"
+  "url": "http://${ip}/api/authenticate"
+  "headers":
+      "Content-Type": "application/json"
+  "json":
+      "username": "18858104920"
+      "password": "123456"
+      "rememberMe": "true"

@@ -1,0 +1,5 @@
+# 获取企业信息的api
+list:
+  "method": "get"
+  "url": "http://${ip}/companys/api/v1/companies"
+  "params": "token=${token}"
