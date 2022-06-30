@@ -3,15 +3,13 @@
 """
 import allure
 import pytest
-
-from api.life import Token
-from api.my_company.companies import Company
 from common.get_log import log
+from api.my_company.companies import Company
 
 
 class TestCompany:
     """
-
+    部门的测试和断言
     """
     company = Company()
 
@@ -73,3 +71,13 @@ class TestCompany:
 
     def test_search_company(self):
         pass
+
+    def test_get_company(self):
+        pass
+
+    def test_delete_company(self):
+        pass
+
+    def test_company_details(self):
+        pass
+    
