@@ -9,7 +9,7 @@ class Token(BaseApi):
     """
     # 通过配置文件获取企业微信的id
 
-    def get_token(self, ):
+    def get_token(self):
         """
 
 
@@ -48,8 +48,8 @@ class Token(BaseApi):
         }
         # 获取access_token
         res = self.send_api(data)
-        token = res["data"]["token_id"]
-        return token
+        self.token = res.json()["data"]["token_id"]
+        return self.token
 
 
 if __name__ == "__main__":

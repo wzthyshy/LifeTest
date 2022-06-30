@@ -1,0 +1,23 @@
+list:
+  ids:
+    - token正确，查询成功
+    - token错误，查询失败
+  data:
+    - 200
+    - 401
+
+creat:
+  ids:
+    - 创建成功
+    - 创建失败
+  data:
+    - 200
+    - 400
+
+update:
+  ids:
+    - 修改成功
+    - 修改失败
+  data:
+    - 200
+    - 500

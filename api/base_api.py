@@ -22,6 +22,53 @@ class BaseApi:
     # 通过配置文件获取测试的环境的ip地址
     ip = cf.get_key("env", "formal_ip")
     Base_Path = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+    params = {}
+
+    def __init__(self):
+        self.token = self.get_token()
+        # self.load = self.load_yaml()
+
+    def get_token(self):
+        """
+
+
+        """
+        # r = requests.post(
+        #     "http://3r5z779982.wicp.vip:7000/api/authenticate",
+        #     data=json.dumps({
+        #         "username": "18858104920",
+        #         "password": "123456",
+        #         "rememberMe": "true"
+        #
+        #     }),
+        #     headers={
+        #         "Content-Type": "application/json",
+        #         "Accept": "application/json"
+        #
+        #     }
+        #
+        # )
+
+        header = {"Content-Type": "application/json"}
+        json_data = {
+            "username": "18858104920",
+            "password": "123456",
+            "rememberMe": "true"
+        }
+        data = {
+            "method": "POST",
+            "url": "http://3r5z779982.wicp.vip:7000/api/authenticate",
+            "headers": header,
+            "json": json_data
+
+
+
+
+        }
+        # 获取access_token
+        res = self.send_api(data)
+        self.token = res.json()["data"]["token_id"]
+        return self.token
 
     def send_api(self, req: dict):
         """
@@ -42,7 +89,7 @@ class BaseApi:
         变成method="get",url="http://xxx"，符合request传参的需求
         """
 
-        res = requests.request(**req).json()
+        res = requests.request(**req)
         return res
 
     @classmethod

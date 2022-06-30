@@ -1,5 +1,228 @@
 # 获取企业信息的api
-list:
-  "method": "get"
-  "url": "http://${ip}/companys/api/v1/companies"
-  "params": "token=${token}"
+creat:
+  {
+    "address": "string",
+    "background": "string",
+    "city": "string",
+    "companyApproves": [
+    {
+      "approveId": 0,
+      "company": {},
+      "id": 0
+    }
+    ],
+    "companyApps": [
+    {
+      "app_id": 0,
+      "company": {},
+      "id": 0
+    }
+    ],
+    "companyLevel": 0,
+    "companyPartners": [
+    {
+      "company": {},
+      "cooperateId": 0,
+      "cooperateStatus": 0,
+      "id": 0,
+      "leader": "string",
+      "leaderId": 0,
+      "leaderPhone": "string",
+      "partnerId": 0,
+      "partnerName": "string"
+    }
+    ],
+    "companyScope": "string",
+    "companyType": "string",
+    "contactFaxs": [
+    {
+      "company": {},
+      "fax": "string",
+      "id": 0
+    }
+    ],
+    "contactPhones": [
+    {
+      "company": {},
+      "id": 0,
+      "phone": "string"
+    }
+    ],
+    "createdDate": "2022-06-30T12:42:59.099Z",
+    "createrId": 0,
+    "createrName": "string",
+    "departments": [
+    {
+      "company": {},
+      "createDate": "2022-06-30T12:42:59.099Z",
+      "createrId": 0,
+      "createrName": "string",
+      "employees": [
+      {
+        "departments": {},
+        "id": 0,
+        "name": "string",
+        "phone": "string",
+        "status": "string",
+        "userId": 0
+      }
+      ],
+      "id": 0,
+      "isroot": true,
+      "lastModifiedBy": 0,
+      "lastModifiedDate": "2022-06-30T12:42:59.099Z",
+      "lastModifiedName": "string",
+      "leaderId": 0,
+      "leaderName": "string",
+      "leaderPhone": "string",
+      "level": 0,
+      "name": "string",
+      "parentDept": 0,
+      "status": "string",
+      "type": "string"
+    }
+    ],
+    "email": "string",
+    "fcomid": 123,
+    "id": 0,
+    "integral": 0,
+    "intro": "string",
+    "lastModifiedBy": 0,
+    "lastModifiedDate": "2022-06-30T12:42:59.099Z",
+    "lealPeople": [
+    {
+      "company": {},
+      "id": 0,
+      "imagePath": "string"
+    }
+    ],
+    "linkmans": [
+    {
+      "company": {},
+      "id": 0,
+      "name": "string",
+      "phone": "string"
+    }
+    ],
+    "logo": "string",
+    "name": "string",
+    "permit": "string",
+    "province": "string",
+    "regTime": "2022-06-30T12:42:59.099Z",
+    "status": "string",
+    "trade": 0
+  }
+
+put:
+  {
+    "address": "string",
+    "background": "string",
+    "city": "string",
+    "companyApproves": [
+    {
+      "approveId": 0,
+      "company": {},
+      "id": 0
+    }
+    ],
+    "companyApps": [
+    {
+      "app_id": 0,
+      "company": {},
+      "id": 0
+    }
+    ],
+    "companyLevel": 0,
+    "companyPartners": [
+    {
+      "company": {},
+      "cooperateId": 0,
+      "cooperateStatus": 0,
+      "id": 0,
+      "leader": "string",
+      "leaderId": 0,
+      "leaderPhone": "string",
+      "partnerId": 0,
+      "partnerName": "string"
+    }
+    ],
+    "companyScope": "string",
+    "companyType": "string",
+    "contactFaxs": [
+    {
+      "company": {},
+      "fax": "string",
+      "id": 0
+    }
+    ],
+    "contactPhones": [
+    {
+      "company": {},
+      "id": 0,
+      "phone": "string"
+    }
+    ],
+    "createdDate": "2022-06-30T12:42:59.109Z",
+    "createrId": 0,
+    "createrName": "string",
+    "departments": [
+    {
+      "company": {},
+      "createDate": "2022-06-30T12:42:59.110Z",
+      "createrId": 0,
+      "createrName": "string",
+      "employees": [
+      {
+        "departments": {},
+        "id": 0,
+        "name": "string",
+        "phone": "string",
+        "status": "string",
+        "userId": 0
+      }
+      ],
+      "id": 0,
+      "isroot": true,
+      "lastModifiedBy": 0,
+      "lastModifiedDate": "2022-06-30T12:42:59.110Z",
+      "lastModifiedName": "string",
+      "leaderId": 0,
+      "leaderName": "string",
+      "leaderPhone": "string",
+      "level": 0,
+      "name": "string",
+      "parentDept": 0,
+      "status": "string",
+      "type": "string"
+    }
+    ],
+    "email": "string",
+    "fcomid": 123,
+    "id": 0,
+    "integral": 0,
+    "intro": "string",
+    "lastModifiedBy": 0,
+    "lastModifiedDate": "2022-06-30T12:42:59.110Z",
+    "lealPeople": [
+    {
+      "company": {},
+      "id": 0,
+      "imagePath": "string"
+    }
+    ],
+    "linkmans": [
+    {
+      "company": {},
+      "id": 0,
+      "name": "string",
+      "phone": "string"
+    }
+    ],
+    "logo": "string",
+    "name": "string",
+    "permit": "string",
+    "province": "string",
+    "regTime": "2022-06-30T12:42:59.110Z",
+    "status": "string",
+    "trade": 0
+  }
